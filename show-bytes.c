@@ -20,7 +20,7 @@ void show_short(short x) {
 }
 
 void show_long (long long  x) {
-    show_bytes((byte_pointer) &x, sizeof( long));
+    show_bytes((byte_pointer) &x, sizeof(long long));
 }
 
 void show_double(double x) {
