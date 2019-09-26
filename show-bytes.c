@@ -23,10 +23,13 @@ void show_int(int x) {
 void show_float(float x) {
     show_bytes((byte_pointer) &x, sizeof(float));
 }
-
+void show_short(short x){
+    show_bytes((byte_pointer) &x, sizeof(short));
+}
 void show_pointer(void *x) {
     show_bytes((byte_pointer) &x, sizeof(void *));
 }
+
 /* $end show-bytes */
 
 
