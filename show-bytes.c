@@ -19,7 +19,7 @@ void show_short(short x) {
     show_bytes((byte_pointer) &x, sizeof(short));
 }
 
-void show_long (long  x) {
+void show_long (long long  x) {
     show_bytes((byte_pointer) &x, sizeof( long));
 }
 
@@ -137,6 +137,9 @@ int main(int argc, char *argv[])
 	string_ueg();
 	printf("Calling string_leg\n");
 	string_leg();
+	show_short(358); 
+	show_long(274877906944); 
+	show_double(3.1415926535); 
     }
     return 0;
 }
