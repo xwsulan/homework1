@@ -137,6 +137,7 @@ int main(int argc, char *argv[])
 	string_ueg();
 	printf("Calling string_leg\n");
 	string_leg();
+	printf("task\n");
 	show_short(358); 
 	show_long(274877906944); 
 	show_double(3.1415926535); 
