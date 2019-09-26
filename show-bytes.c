@@ -15,6 +15,17 @@ void show_bytes(byte_pointer start, size_t len) {
 	printf("%p\t0x%.2x\n", &start[i], start[i]); 
     printf("\n");
 }
+void show_short(short x) {
+    show_bytes((byte_pointer) &x, sizeof(short));
+}
+
+void show_long (long  x) {
+    show_bytes((byte_pointer) &x, sizeof( long));
+}
+
+void show_double(double x) {
+    show_bytes((byte_pointer) &x, sizeof(double));
+}
 
 void show_int(int x) {
     show_bytes((byte_pointer) &x, sizeof(int)); 
@@ -23,13 +34,10 @@ void show_int(int x) {
 void show_float(float x) {
     show_bytes((byte_pointer) &x, sizeof(float));
 }
-void show_short(short x){
-    show_bytes((byte_pointer) &x, sizeof(short));
-}
+
 void show_pointer(void *x) {
     show_bytes((byte_pointer) &x, sizeof(void *));
 }
-
 /* $end show-bytes */
 
 
